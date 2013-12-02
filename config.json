@@ -1,3 +1,19 @@
 {
-	""
+	"coverPrefix": "./music/covers",
+	
+	"playerGraphicsContainer": "graphics-container",
+	
+	"radius": 600,
+	
+	"hostPath": "http://localhost/player",
+	
+	"albums": [
+		{
+			"cover": "",
+			
+			"songs": [
+				
+			]
+		}
+	]
 }
