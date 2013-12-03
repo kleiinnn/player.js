@@ -1,10 +1,20 @@
+.player-js{
+	position: relative;
+	top: 200px;
+	max-width: 1300px;
+}
+
+.player-main{
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
 #graphics{
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: perspective(900) rotateX(-10deg) rotateY(0deg);
+    -webkit-transform: perspective(900) rotateX(-10deg);
 	-webit-backface-visibility: hidden;
-	position: absolute;
-	top: 1000px;
-	left: 1200px;
+	position: relative;
+	margin: 0 auto;
 }
 
 .album{
@@ -31,3 +41,29 @@
 .active{
 	-webkit-backface-visibility: hidden !important;
 }
+
+#right-control{
+        float:right;
+}
+
+#left-control{
+        float:left;
+}
+
+.controls{
+        width: 120px;
+        height: 145px;
+        -webkit-transform: perspective(2000);
+		display:inline-block;
+	    vertical-align:middle;
+}
+
+.controls:active{
+        -webkit-transform: translateX(5px);
+}
+
+
+.controls img{
+        margin-left: auto;
+}
+
