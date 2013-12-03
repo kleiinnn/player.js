@@ -20,7 +20,7 @@ exports.addPlayer = function(){
 		var songCount = config.albums[i].songs.length;
 		var verticalAngle = 360 / songCount;
 		var verticalRadius = elementSize / (2 * Math.sin(Math.PI / songCount));
-		output += '<div class="album" style="-webkit-transform: rotateY(' + (i * horizontalAngle) + 'deg) translateZ(' + (config.radius - verticalRadius) + 'px)">'
+		output += '<div class="album" id="album-' + (i+1) + '" style="-webkit-transform: rotateY(' + (i * horizontalAngle) + 'deg) translateZ(' + (config.radius - verticalRadius) + 'px)">'
 		for(var j = 0; j < songCount; j++){
 			output += '<div class="song-wrapper">' +
 				'<div class="song ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + '" id="album-' + (i+1) + '-song' + (j+1) + '" style="-webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + verticalRadius + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">' +
