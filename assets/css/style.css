@@ -1,0 +1,25 @@
+#graphics{
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: perspective(900) rotateX(-10deg) rotateY(0deg);
+	-webit-backface-visibility: hidden;
+	position: absolute;
+	top: 1000px;
+	left: 1200px;
+}
+
+.album{
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: perspective(900);
+}
+
+.song-wrapper{
+	position: absolute;
+}
+
+.song{
+	position: absolute;
+}
+
+.song-back{
+	position: absolute;
+}

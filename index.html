@@ -4,18 +4,36 @@
 		<title>player.js</title>
 		<link type="type/css" rel="stylesheet" href="assets/css/style.css">
 		<script type="text/javascript" src="assets/js/require-kernel.js"></script>
-                <script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
 	</head>
 	<body>
 		<div class="player.js">
 			<div id="left-control" class="controls">
-                                <img src="./assets/img/Left.svg" width="140">
-                        </div>
-			<div class="main-player" id="graphics-container">
-
+                <img src="./assets/img/Left.svg" width="140">
+            </div>
+			<div class="player-main" id="graphics-container">
+				
 			</div>
 			<div id="right-control" class="controls">
-	                	<img src="./assets/img/Right.svg" width="140">
+            	<img src="./assets/img/Right.svg" width="140">
 			</div>
+			<script type="text/javascript">
+			var config;
+			var graphics = null;
+			
+			$(document).ready(function(){
+				$.getJSON('config.json', function(json){
+					config = json;
+					init();
+				});
+			});
+			
+			function init(){
+				require.setLibraryURI(config.hostPath + '/assets/js');
+				graphics = require("graphics.js");
+				graphics.init();
+				graphics.addPlayer();
+			}
+			</script>
 	</body>
 </html>
