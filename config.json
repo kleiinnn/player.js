@@ -3,7 +3,7 @@
 	
 	"graphicsContainer": "graphics-container",
 	
-	"radius": 600,
+	"radius": 300,
 	
 	"hostPath": "http://localhost/player",
 	
