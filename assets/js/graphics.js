@@ -1,6 +1,6 @@
 var graphicsContainer = null;
 var horizontalAngle;
-
+var activeAlbum = 0;
 
 exports.init = function(){
 	graphicsContainer = $('#' + config.graphicsContainer);
