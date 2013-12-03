@@ -19,7 +19,7 @@ exports.addPlayer = function(){
 	for(var i = 0; i < albumCount; i++){
 		var songCount = config.albums[i].songs.length;
 		var verticalAngle = 360 / songCount;
-		var verticalRadius = elementSize / (2 * Math.sin(Math.PI / albumCount));
+		var verticalRadius = elementSize / (2 * Math.sin(Math.PI / songCount));
 		output += '<div class="album" style="-webkit-transform: rotateY(' + (i * horizontalAngle) + 'deg) translateZ(' + (config.radius) + 'px)">'
 		for(var j = 0; j < songCount; j++){
 			output += '<div class="song-wrapper">' +
