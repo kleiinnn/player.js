@@ -28,6 +28,14 @@
 				});
 			});
 			
+			$('#left-control').click(function(){
+				graphics.turnLeft();
+			});
+			
+			$('#right-control').click(function(){
+				graphics.turnRight();
+			});
+			
 			function init(){
 				require.setLibraryURI(config.hostPath + '/assets/js');
 				graphics = require("graphics.js");
