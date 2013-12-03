@@ -12,6 +12,10 @@
     -webkit-transform: perspective(900);
 }
 
+.song-hidden{
+	display: none;
+}
+
 .song-wrapper{
 	position: absolute;
 }
@@ -22,4 +26,8 @@
 
 .song-back{
 	position: absolute;
+}
+
+.active{
+	-webkit-backface-visibility: hidden !important;
 }
