@@ -1,5 +1,6 @@
 var graphicsContainer = null;
 var horizontalAngle;
+var verticalAngles = new Array();
 var activeAlbum = 0;
 var angleCounter = 0;
 var transformOrigin = '';
@@ -21,14 +22,15 @@ exports.addPlayer = function(){
 	for(var i = 0; i < albumCount; i++){
 		var songCount = config.albums[i].songs.length;
 		var verticalAngle = 360 / songCount;
+		verticalAngles[i] = verticalAngle;
 		var verticalRadius = elementSize / (2 * Math.sin(Math.PI / songCount));
-		output += '<div class="album" id="album-' + (i+1) + '" style="-webkit-transform: rotateY(' + (i * horizontalAngle) + 'deg) translateZ(' + (config.radius - verticalRadius) + 'px)">'
+		output += '<div class="album" id="album-' + (i+1) + '" style="-webkit-transform: rotateY(' + (i * horizontalAngle) + 'deg) translateZ(' + (config.radius - verticalRadius) + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">'
 		for(var j = 0; j < songCount; j++){
 			output += '<div class="song-wrapper">' +
-				'<div class="song ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" id="album-' + (i+1) + '-song' + (j+1) + '" style="-webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + verticalRadius + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">' +
+				'<div class="song ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" id="album-' + (i+1) + '-song-' + (j+1) + '" style="-webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + verticalRadius + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">' +
 				'<img src="' + config.coverPrefix + config.albums[i].cover + '" style="width: ' + (elementSize-20) + 'px; height:' + (elementSize-20) + 'px">' + 
 				'</div>' + 
-				'<div class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize - 18) + 'px; height: ' + (elementSize - 18) + 'px;"></div>' +
+				'<div id="album-' + (i+1) + '-song-' + (j+1) + '-back" class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize - 18) + 'px; height: ' + (elementSize - 18) + 'px;"></div>' +
 				'</div>';
 		}
 		output += '</div>'
@@ -37,7 +39,7 @@ exports.addPlayer = function(){
 	graphicsContainer.append(output);
 }
 
-exports.turnLeft = function(){
+exports.rotateLeft = function(){
 	$('.active').not('.vertical-center').addClass('song-hidden');
 	$('.active').removeClass('active');
 	activeAlbum++;
@@ -46,10 +48,10 @@ exports.turnLeft = function(){
 	}
 	$('#album-' + (activeAlbum+1)).children('*').children('.song, .song-back').addClass('active');
 	$('.active').removeClass('song-hidden');
-	turn('left')
+	rotateY('left')
 }
 
-exports.turnRight = function(){
+exports.rotateRight = function(){
 	$('.active').not('.vertical-center').addClass('song-hidden');
 	$('.active').removeClass('active');
 	activeAlbum--;
@@ -58,10 +60,34 @@ exports.turnRight = function(){
 	}
 	$('#album-' + (activeAlbum+1)).children('*').children('.song, .song-back').addClass('active');
 	$('.active').removeClass('song-hidden');
-	turn('right')
+	rotateY('right')
 }
 
-function turn(direction){
+exports.rotateDown = function(){
+	var activeSong = Number($('.active.vertical-center').attr('id').split('-')[3]);
+	if(activeSong == config.albums[activeAlbum].songs.length){
+		activeSong = 1;
+	}
+	console.log('Song: ' + activeSong);
+	console.log('Album: ' + activeAlbum);
+	$('.active.vertical-center').removeClass('vertical-center');
+	console.log($('#album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + ', #album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + '-back'))
+	$('#album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + ', #album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + '-back').addClass('vertical-center');
+	rotateX('down');
+}
+
+exports.rotateUp = function(){
+	var activeSong = Number($('.active.vertical-center').attr('id').split('-')[3]) - 1;
+	if(activeSong == 0){
+		activeSong = config.albums[activeAlbum].songs.length;
+	}
+	$('.active.vertical-center').removeClass('vertical-center');
+	$('#album-' + (activeAlbum + 1) + '-song-' + activeSong + ', #album-' + (activeAlbum + 1) + '-song-' + activeSong + '-back').addClass('vertical-center');
+	rotateX('up');
+}
+
+
+function rotateY(direction){
 	setTimeout(function(){
             var transform = graphicsContainer.children().css('-webkit-transform');
 			if(angleCounter == 0){
@@ -70,11 +96,31 @@ function turn(direction){
             graphicsContainer.children().css('-webkit-transform', transform + ' rotateY(' + (direction != 'left' ? '1' : '-1') + 'deg)');
             angleCounter += 1;
             if(angleCounter < horizontalAngle){
-            	turn(direction);
+            	rotateY(direction);
             }
             else{
 				if(angleCounter != 0){
 					graphicsContainer.children().css('-webkit-transform', transformOrigin + ' rotateY(' + (horizontalAngle * (direction != 'left' ? 1 : -1)) + 'deg)');
+				}
+                angleCounter = 0;
+            }
+    }, 10);
+}
+
+function rotateX(direction){
+	setTimeout(function(){
+            var transform = $('#album-' + (activeAlbum + 1)).css('-webkit-transform');
+			if(angleCounter == 0){
+				transformOrigin = transform;
+			}
+            $('#album-' + (activeAlbum + 1)).css('-webkit-transform', transform + ' rotateX(' + (direction != 'down' ? '1' : '-1') + 'deg)');
+            angleCounter += 1;
+            if(angleCounter < verticalAngles[activeAlbum]){
+            	rotateX(direction);
+            }
+            else{
+				if(angleCounter != 0){
+					$('#album-' + (activeAlbum + 1)).css('-webkit-transform', transformOrigin + ' rotateX(' + (verticalAngles[activeAlbum] * (direction != 'down' ? 1 : -1)) + 'deg)');
 				}
                 angleCounter = 0;
             }

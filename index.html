@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>player.js</title>
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link type="type/css" rel="stylesheet" href="assets/css/style.css">
 		<script type="text/javascript" src="assets/js/require-kernel.js"></script>
         <script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
@@ -29,12 +30,32 @@
 			});
 			
 			$('#left-control').click(function(){
-				graphics.turnLeft();
+				graphics.rotateLeft();
 			});
 			
 			$('#right-control').click(function(){
-				graphics.turnRight();
+				graphics.rotateRight();
 			});
+			
+			$(document).keydown(function(e){
+				switch(e.keyCode){
+				case 37:
+					graphics.rotateRight();
+					break;
+					
+				case 39:
+					graphics.rotateLeft();					
+					break;
+					
+				case 38:
+					graphics.rotateUp();
+					break;
+					
+				case 40:
+					graphics.rotateDown();
+					
+				}
+			})
 			
 			function init(){
 				require.setLibraryURI(config.hostPath + '/assets/js');

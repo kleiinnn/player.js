@@ -20,6 +20,7 @@
 .album{
     -webkit-transform-style: preserve-3d;
     -webkit-transform: perspective(900);
+	position: absolute;
 }
 
 .song-hidden{
