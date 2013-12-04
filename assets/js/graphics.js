@@ -30,7 +30,7 @@ exports.addPlayer = function(){
 				'<div class="song ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" id="album-' + (i+1) + '-song-' + (j+1) + '" style="-webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + verticalRadius + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">' +
 				'<img src="' + config.coverPrefix + config.albums[i].cover + '" style="width: ' + (elementSize-20) + 'px; height:' + (elementSize-20) + 'px">' + 
 				'</div>' + 
-				'<div id="album-' + (i+1) + '-song-' + (j+1) + '-back" class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize - 18) + 'px; height: ' + (elementSize - 18) + 'px;"></div>' +
+				'<div id="album-' + (i+1) + '-song-' + (j+1) + '-back" class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize) + 'px; height: ' + (elementSize) + 'px;"></div>' +
 				'</div>';
 		}
 		output += '</div>'
@@ -64,15 +64,12 @@ exports.rotateRight = function(){
 }
 
 exports.rotateDown = function(){
-	var activeSong = Number($('.active.vertical-center').attr('id').split('-')[3]);
-	if(activeSong == config.albums[activeAlbum].songs.length){
+	var activeSong = Number($('.active.vertical-center').attr('id').split('-')[3]) + 1;
+	if(activeSong == config.albums[activeAlbum].songs.length+1){
 		activeSong = 1;
 	}
-	console.log('Song: ' + activeSong);
-	console.log('Album: ' + activeAlbum);
 	$('.active.vertical-center').removeClass('vertical-center');
-	console.log($('#album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + ', #album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + '-back'))
-	$('#album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + ', #album-' + (activeAlbum+1) + '-song-' + (activeSong+1) + '-back').addClass('vertical-center');
+	$('#album-' + (activeAlbum+1) + '-song-' + activeSong + ', #album-' + (activeAlbum+1) + '-song-' + activeSong + '-back').addClass('vertical-center');
 	rotateX('down');
 }
 
