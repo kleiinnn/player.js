@@ -21,6 +21,7 @@
 			<script type="text/javascript">
 			var config;
 			var graphics = null;
+			var audio = null;
 			
 			$(document).ready(function(){
 				$.getJSON('config.json', function(json){
@@ -53,15 +54,16 @@
 					
 				case 40:
 					graphics.rotateDown();
-					
 				}
-			})
+			});
 			
 			function init(){
 				require.setLibraryURI(config.hostPath + '/assets/js');
 				graphics = require("graphics.js");
 				graphics.init();
 				graphics.addPlayer();
+				audio = require('audio.js');
+				audio.init();
 			}
 			</script>
 	</body>
