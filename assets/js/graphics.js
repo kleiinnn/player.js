@@ -30,7 +30,7 @@ exports.addPlayer = function(){
 				'<div class="song ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" id="album-' + (i+1) + '-song-' + (j+1) + '" style="-webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + verticalRadius + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">' +
 				'<img src="' + config.coverPrefix + config.albums[i].cover + '" style="width: ' + (elementSize-20) + 'px; height:' + (elementSize-20) + 'px">' + 
 				'</div>' + 
-				'<div id="album-' + (i+1) + '-song-' + (j+1) + '-back" class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize) + 'px; height: ' + (elementSize) + 'px;"></div>' +
+				'<div id="album-' + (i+1) + '-song-' + (j+1) + '-back" class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize-20) + 'px; height: ' + (elementSize-20) + 'px;"></div>' +
 				'</div>';
 		}
 		output += '</div>'
