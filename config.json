@@ -1,7 +1,7 @@
 {
 	"coverPrefix": "./music/covers",
 	
-	"songLocation": "./music",
+	"soundFileLocation": "./music",
 	
 	"graphicsContainer": "graphics-container",
 	
@@ -15,37 +15,7 @@
 			
 			"name": "",
 			
-			"songs": [
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				}
-			]
-		},
-		{
-			"cover": "",
-			
-			"name": "",
+			"soundFileFolder": "",
 			
 			"songs": [
 				{
@@ -79,37 +49,7 @@
 			
 			"name": "",
 			
-			"songs": [
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				}
-			]
-		},
-		{
-			"cover": "",
-			
-			"name": "",
+			"soundFileFolder": "",
 			
 			"songs": [
 				{
@@ -143,57 +83,7 @@
 			
 			"name": "",
 			
-			"songs": [
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				},
-				{
-					"title": "",
-					"file": ""
-				}
-			]
-		},
-		{
-			"cover": "",
-			
-			"name": "",
+			"soundFileFolder": "",
 			
 			"songs": [
 				{
@@ -227,6 +117,8 @@
 			
 			"name": "",
 			
+			"soundFileFolder": "",
+			
 			"songs": [
 				{
 					"title": "",
@@ -259,7 +151,25 @@
 			
 			"name": "",
 			
+			"soundFileFolder": "",
+			
 			"songs": [
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
 				{
 					"title": "",
 					"file": ""
@@ -295,11 +205,9 @@
 			
 			"name": "",
 			
+			"soundFileFolder": "",
+			
 			"songs": [
-				{
-					"title": "",
-					"file": ""
-				},
 				{
 					"title": "",
 					"file": ""
@@ -330,6 +238,42 @@
 			"cover": "",
 			
 			"name": "",
+			
+			"soundFileFolder": "",
+			
+			"songs": [
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				}
+			]
+		},
+		{
+			"cover": "",
+			
+			"name": "",
+			
+			"soundFileFolder": "",
 			
 			"songs": [
 				{
@@ -366,6 +310,84 @@
 			"cover": "",
 			
 			"name": "",
+			
+			"soundFileFolder": "",
+			
+			"songs": [
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				}
+			]
+		},
+		{
+			"cover": "",
+			
+			"name": "",
+			
+			"soundFileFolder": "",
+			
+			"songs": [
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				},
+				{
+					"title": "",
+					"file": ""
+				}
+			]
+		},
+		{
+			"cover": "",
+			
+			"name": "",
+			
+			"soundFileFolder": "",
 			
 			"songs": [
 				{
