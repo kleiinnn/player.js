@@ -34,6 +34,13 @@ exports.play = function(album, song){
     });
 }
 
+exports.stop = function(){
+	if(source != null){
+		source.stop(0);
+		source = null;
+	}
+}
+
 function loadSong(url, callback){
     var request = new XMLHttpRequest();
     request.open('GET', url, true);
