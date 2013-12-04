@@ -54,9 +54,9 @@ exports.turnRight = function(){
 	$('.active').removeClass('active');
 	activeAlbum--;
 	if(activeAlbum == -1){
-		activeAlbum = config.albums.length;
+		activeAlbum = config.albums.length-1;
 	}
-	$('#album-' + (activeAlbum)).children('*').children('.song, .song-back').addClass('active');
+	$('#album-' + (activeAlbum+1)).children('*').children('.song, .song-back').addClass('active');
 	$('.active').removeClass('song-hidden');
 	turn('right')
 }
