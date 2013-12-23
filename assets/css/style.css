@@ -42,8 +42,9 @@ body{
 }
 
 .song img{
-	margin-left: 3px;
-    margin-top: 3px;
+	margin-left: 5px;
+    margin-top: 5px;
+	-webkit-filter: blur(1px) grayscale(50%);
 }
 
 .song-back{
