@@ -1,447 +1,423 @@
 {
-	"coverPrefix": "./music",
-	
-	"soundFileLocation": "./music",
-	
-	"graphicsContainer": "graphics-container",
-	
-	"radius": 400,
-	
-	"hostPath": "http://localhost/player",
-	
-	"albums": [
-		{
-			"cover": "A_Beautiful_Lie.jpg",
-			"soundFileFolder": "A_Beautiful_Lie",
-			"songs": [
-				{
-					"title": "01_Attack",
-					"file": "01_Attack.mp3"
-				},
-				{
-					"title": "02_A_Beautiful_Lie",
-					"file": "02_A_Beautiful_Lie.mp3"
-				},
-				{
-					"title": "03_The_Kill",
-					"file": "03_The_Kill.mp3"
-				},
-				{
-					"title": "04_Was_It_A_Dream",
-					"file": "04_Was_It_A_Dream.mp3"
-				},
-				{
-					"title": "05_The_Fantasy",
-					"file": "05_The_Fantasy.mp3"
-				},
-				{
-					"title": "06_Savior",
-					"file": "06_Savior.mp3"
-				},
-				{
-					"title": "07_From_Yesterday",
-					"file": "07_From_Yesterday.mp3"
-				},
-				{
-					"title": "08_The_Story",
-					"file": "08_The_Story.mp3"
-				},
-				{
-					"title": "09_R-Evolve",
-					"file": "09_R-Evolve.mp3"
-				},
-				{
-					"title": "10_A_Modern_Myth",
-					"file": "10_A_Modern_Myth.mp3"
-				},
-				{
-					"title": "11_Praying_For_A_Riot",
-					"file": "11_Praying_For_A_Riot.mp3"
-				},
-				{
-					"title": "12_Battle_Of_One",
-					"file": "12_Battle_Of_One.mp3"
-				},
-				{
-					"title": "13_Hunter",
-					"file": "13_Hunter.mp3"
-				}
-			]
-		},
-		{
-			"cover": "All_the_Right_Reasons.jpg",
-			"soundFileFolder": "All_the_Right_Reasons",
-			"songs": [
-				{
-					"title": "01_Follow_You_Home",
-					"file": "01_Follow_You_Home.mp3"
-				},
-				{
-					"title": "02_Fight_for_All_the_Wrong_Reasons",
-					"file": "02_Fight_for_All_the_Wrong_Reasons.mp3"
-				},
-				{
-					"title": "03_Photograph",
-					"file": "03_Photograph.mp3"
-				},
-				{
-					"title": "04_Animals",
-					"file": "04_Animals.mp3"
-				},
-				{
-					"title": "05_Savin'_Me",
-					"file": "05_Savin'_Me.m4a"
-				},
-				{
-					"title": "05_Savin'_Me",
-					"file": "05_Savin'_Me.mp3"
-				},
-				{
-					"title": "06_Far_Away",
-					"file": "06_Far_Away.mp3"
-				},
-				{
-					"title": "07_Next_Contestant",
-					"file": "07_Next_Contestant.mp3"
-				},
-				{
-					"title": "08_Side_of_a_Bullet",
-					"file": "08_Side_of_a_Bullet.mp3"
-				},
-				{
-					"title": "09_If_Everyone_Cared",
-					"file": "09_If_Everyone_Cared.mp3"
-				},
-				{
-					"title": "10_Someone_That_You're_With",
-					"file": "10_Someone_That_You're_With.mp3"
-				},
-				{
-					"title": "11_Rockstar",
-					"file": "11_Rockstar.mp3"
-				}
-			]
-		},
-		{
-			"cover": "Curb.jpg",
-			"soundFileFolder": "Curb",
-			"songs": [
-				{
-					"title": "01_Little_Friend",
-					"file": "01_Little_Friend.mp3"
-				},
-				{
-					"title": "02_Pusher",
-					"file": "02_Pusher.mp3"
-				},
-				{
-					"title": "03_Detangler",
-					"file": "03_Detangler.mp3"
-				},
-				{
-					"title": "04_Curb",
-					"file": "04_Curb.mp3"
-				},
-				{
-					"title": "05_Where_",
-					"file": "05_Where_.mp3"
-				},
-				{
-					"title": "06_Falls_Back_On",
-					"file": "06_Falls_Back_On.mp3"
-				},
-				{
-					"title": "07_Sea_Groove",
-					"file": "07_Sea_Groove.mp3"
-				},
-				{
-					"title": "08_Fly",
-					"file": "08_Fly.mp3"
-				},
-				{
-					"title": "09_Just_Four",
-					"file": "09_Just_Four.mp3"
-				},
-				{
-					"title": "10_Left",
-					"file": "10_Left.mp3"
-				},
-				{
-					"title": "11_Window_Shopper",
-					"file": "11_Window_Shopper.mp3"
-				},
-				{
-					"title": "12_I_Don't_Have",
-					"file": "12_I_Don't_Have.mp3"
-				}
-			]
-		},
-		{
-			"cover": "Dark_Horse.jpg",
-			"soundFileFolder": "Dark_Horse",
-			"songs": [
-				{
-					"title": "01_Something_in_your_mouth",
-					"file": "01_Something_in_your_mouth.mp3"
-				},
-				{
-					"title": "02_Burn_it_to_the_ground",
-					"file": "02_Burn_it_to_the_ground.mp3"
-				},
-				{
-					"title": "03_Gotta_be_somebody",
-					"file": "03_Gotta_be_somebody.mp3"
-				},
-				{
-					"title": "04_I'd_come_for_you",
-					"file": "04_I'd_come_for_you.mp3"
-				},
-				{
-					"title": "05_Next_go_round",
-					"file": "05_Next_go_round.mp3"
-				},
-				{
-					"title": "06_Just_to_get_high",
-					"file": "06_Just_to_get_high.mp3"
-				},
-				{
-					"title": "07_Never_gonna_be_alone",
-					"file": "07_Never_gonna_be_alone.mp3"
-				},
-				{
-					"title": "08_Shakin'_hands",
-					"file": "08_Shakin'_hands.mp3"
-				},
-				{
-					"title": "09_S.E.X.",
-					"file": "09_S.E.X..mp3"
-				},
-				{
-					"title": "10_Today_was_your_last_day",
-					"file": "10_Today_was_your_last_day.mp3"
-				},
-				{
-					"title": "11_This_afternoon",
-					"file": "11_This_afternoon.mp3"
-				}
-			]
-		},
-		{
-			"cover": "Here_And_Now.jpg",
-			"soundFileFolder": "Here_And_Now",
-			"songs": [
-				{
-					"title": "01_This_Means_War",
-					"file": "01_This_Means_War.mp3"
-				},
-				{
-					"title": "02_Bottoms_Up",
-					"file": "02_Bottoms_Up.mp3"
-				},
-				{
-					"title": "03_When_We_Stand_Together",
-					"file": "03_When_We_Stand_Together.mp3"
-				},
-				{
-					"title": "04_Midnight_Queen",
-					"file": "04_Midnight_Queen.mp3"
-				},
-				{
-					"title": "05_Gotta_Get_Me_Some",
-					"file": "05_Gotta_Get_Me_Some.mp3"
-				},
-				{
-					"title": "06_Lullaby",
-					"file": "06_Lullaby.mp3"
-				},
-				{
-					"title": "07_Kiss_It_Goodbye",
-					"file": "07_Kiss_It_Goodbye.mp3"
-				},
-				{
-					"title": "08_Trying_Not_To_Love_You",
-					"file": "08_Trying_Not_To_Love_You.mp3"
-				},
-				{
-					"title": "09_Holding_On_To_Heaven",
-					"file": "09_Holding_On_To_Heaven.mp3"
-				},
-				{
-					"title": "10_Everything_I_Wanna_Do",
-					"file": "10_Everything_I_Wanna_Do.mp3"
-				},
-				{
-					"title": "11_Don't_Ever_Let_It_End",
-					"file": "11_Don't_Ever_Let_It_End.mp3"
-				}
-			]
-		},
-		{
-			"cover": "Silver_Side_Up.jpg",
-			"soundFileFolder": "Silver_Side_Up",
-			"songs": [
-				{
-					"title": "01_Never_Again",
-					"file": "01_Never_Again.mp3"
-				},
-				{
-					"title": "02_How_You_Remind_Me",
-					"file": "02_How_You_Remind_Me.m4a"
-				},
-				{
-					"title": "02_How_You_Remind_Me",
-					"file": "02_How_You_Remind_Me.mp3"
-				},
-				{
-					"title": "03_Woke_Up_This_Morning",
-					"file": "03_Woke_Up_This_Morning.mp3"
-				},
-				{
-					"title": "04_Too_Bad",
-					"file": "04_Too_Bad.mp3"
-				},
-				{
-					"title": "05_Just_For",
-					"file": "05_Just_For.mp3"
-				},
-				{
-					"title": "06_Hollywood",
-					"file": "06_Hollywood.mp3"
-				},
-				{
-					"title": "07_Money_Bought",
-					"file": "07_Money_Bought.mp3"
-				},
-				{
-					"title": "08_Where_Do_I_Hide",
-					"file": "08_Where_Do_I_Hide.mp3"
-				},
-				{
-					"title": "09_Hangnail",
-					"file": "09_Hangnail.mp3"
-				},
-				{
-					"title": "10_Good_Times_Gone",
-					"file": "10_Good_Times_Gone.mp3"
-				}
-			]
-		},
-		{
-			"cover": "The_Long_Road.jpg",
-			"soundFileFolder": "The_Long_Road",
-			"songs": [
-				{
-					"title": "01_Flat_on_the_Floor",
-					"file": "01_Flat_on_the_Floor.mp3"
-				},
-				{
-					"title": "02_Do_This_Anymore",
-					"file": "02_Do_This_Anymore.mp3"
-				},
-				{
-					"title": "03_Someday",
-					"file": "03_Someday.mp3"
-				},
-				{
-					"title": "04_Believe_It_or_Not",
-					"file": "04_Believe_It_or_Not.mp3"
-				},
-				{
-					"title": "05_Feelin'_Way_Too_Damn_Good",
-					"file": "05_Feelin'_Way_Too_Damn_Good.mp3"
-				},
-				{
-					"title": "06_Because_of_You",
-					"file": "06_Because_of_You.mp3"
-				},
-				{
-					"title": "07_Figured_You_Out",
-					"file": "07_Figured_You_Out.mp3"
-				},
-				{
-					"title": "08_Should've_Listened",
-					"file": "08_Should've_Listened.mp3"
-				},
-				{
-					"title": "09_Throw_Yourself_Away",
-					"file": "09_Throw_Yourself_Away.mp3"
-				},
-				{
-					"title": "10_Another_Hole_in_the_Head",
-					"file": "10_Another_Hole_in_the_Head.mp3"
-				},
-				{
-					"title": "11_See_You_at_the_Show",
-					"file": "11_See_You_at_the_Show.mp3"
-				},
-				{
-					"title": "12_Saturday_Night's_Alright_(For_Fighting)",
-					"file": "12_Saturday_Night's_Alright_(For_Fighting).mp3"
-				},
-				{
-					"title": "13_Yanking_Out_My_Heart",
-					"file": "13_Yanking_Out_My_Heart.mp3"
-				},
-				{
-					"title": "14_Learn_the_Hard_Way",
-					"file": "14_Learn_the_Hard_Way.mp3"
-				}
-			]
-		},
-		{
-			"cover": "This_Is_War.jpg",
-			"soundFileFolder": "This_Is_War",
-			"songs": [
-				{
-					"title": "01_Escape",
-					"file": "01_Escape.mp3"
-				},
-				{
-					"title": "02_Night_Of_The_Hunter",
-					"file": "02_Night_Of_The_Hunter.mp3"
-				},
-				{
-					"title": "03_Kings_And_Queens",
-					"file": "03_Kings_And_Queens.mp3"
-				},
-				{
-					"title": "04_This_Is_War",
-					"file": "04_This_Is_War.mp3"
-				},
-				{
-					"title": "05_100_Suns",
-					"file": "05_100_Suns.mp3"
-				},
-				{
-					"title": "06_Hurricane",
-					"file": "06_Hurricane.mp3"
-				},
-				{
-					"title": "07_Closer_To_The_Edge",
-					"file": "07_Closer_To_The_Edge.mp3"
-				},
-				{
-					"title": "08_Vox_Populi",
-					"file": "08_Vox_Populi.mp3"
-				},
-				{
-					"title": "09_Search_And_Destroy",
-					"file": "09_Search_And_Destroy.mp3"
-				},
-				{
-					"title": "10_Alibi",
-					"file": "10_Alibi.mp3"
-				},
-				{
-					"title": "11_Stranger_In_A_Strange_Land",
-					"file": "11_Stranger_In_A_Strange_Land.mp3"
-				},
-				{
-					"title": "12_L490",
-					"file": "12_L490.mp3"
-				}
-			]
-		}
-		
-	]
+        "coverPrefix": "./music/covers",
+        
+        "soundFileLocation": "./music",
+        
+        "graphicsContainer": "graphics-container",
+        
+        "radius": 300,
+        
+        "hostPath": "http://localhost/player",
+        
+        "albums": [
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                },
+                {
+                        "cover": "",
+                        
+                        "name": "",
+                        
+                        "soundFileFolder": "",
+                        
+                        "songs": [
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                },
+                                {
+                                        "title": "",
+                                        "file": ""
+                                }
+                        ]
+                }
+                
+        ]
 }
+
+
