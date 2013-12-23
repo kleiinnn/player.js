@@ -42,9 +42,14 @@ body{
 }
 
 .song img{
-	margin-left: 5px;
-    margin-top: 5px;
-	-webkit-filter: blur(1px) grayscale(50%);
+	margin-left: 10px;
+    margin-top: 10px;
+}
+
+.song .song-content{
+	margin-left: 10px;
+    margin-top: 10px;
+	background-size: cover;
 }
 
 .song-back{

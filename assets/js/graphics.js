@@ -28,7 +28,8 @@ exports.addPlayer = function(){
 		for(var j = 0; j < songCount; j++){
 			output += '<div class="song-wrapper">' +
 				'<div class="song ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" id="album-' + (i+1) + '-song-' + (j+1) + '" style="-webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius + 10) + 'px); width: ' + elementSize + 'px; height: ' + elementSize + 'px;">' +
-				'<img src="' + config.coverPrefix + '/' + config.albums[i].cover + '" style="width: ' + (elementSize-10) + 'px; height:' + (elementSize-10) + 'px">' + 
+				'<div class="song-content" style="width: ' + (elementSize-20) + 'px; height:' + (elementSize-20) + 'px; background-image:' + " url('" + config.coverPrefix + "/" + config.albums[i].cover + "')" + '">' +
+				'</div>' + 
 				'</div>' + 
 				'<!--div id="album-' + (i+1) + '-song-' + (j+1) + '-back" class="song-back ' + ((i != 0 && j != 0) ? 'song-hidden' : '') + ' ' + (i == 0 ? 'active' : '') + ' ' + (j == 0 ? 'vertical-center' : '') + '" style="background-color: rgb(' +  Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + ', ' + Math.floor(Math.random() * (256 + 1)) + '); -webkit-transform: rotateX(' + (j * verticalAngle) + 'deg) translateZ(' + (verticalRadius - 1.2) + 'px); width: ' + (elementSize-20) + 'px; height: ' + (elementSize-20) + 'px;"></div-->' +
 				'</div>';
